@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion with tailwind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/145ef0fefa.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .roboto {
+        font-family: "Roboto", sans-serif;
+        }
+        .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        }
+
+    </style>
 </head>
-<body>
+<body class="roboto">
     <header class="max-w-7xl mx-auto bg-[#FFFBF0]">
         <!-- Navbar section--------------------------------------------------- -->
         <nav class="max-w-5xl mx-auto flex justify-between items-center p-5">
@@ -24,7 +36,23 @@
             </div>
         </nav>
         <!-- Banner section-------------------------------------------------- -->
-        <section class="max-w-5xl mx-auto"></section>
+        <section class="max-w-5xl mx-auto grid lg:grid-cols-2 items-center p-5 sm:grid-cols-1">
+            <div class="flex flex-col gap-y-3">
+                <h1 class="bebas-neue-regular text-[#363958] text-7xl"><span class="text-[#FABE4C]">Be the Penguins</span> <br>
+                    of Winter</h1>
+                <p class="text-base text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry.</p>
+                <div>
+                    <button class="text-white py-5 px-9 bg-black flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#A4BC46] to-[#85A019]">
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        BUY NOW
+                    </button>  
+                </div>  
+            </div>
+            <div>
+                <img src="images/model.png" alt="">
+            </div>
+        </section>
     </header>
     <main></main>
     <footer></footer>
